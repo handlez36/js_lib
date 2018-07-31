@@ -1,14 +1,15 @@
 {
   "name": "jslibrary",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "My random JS library",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/handlez36/js_lib.git"
+    "url": "https://github.com/handlez36/js_lib.git"
   },
   "author": "Brandon McLean <handlez36@gmail.com>",
   "license": "ISC",
@@ -18,5 +19,10 @@
   "homepage": "https://github.com/handlez36/js_lib#readme",
   "dependencies": {
     "unique-random-array": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "5.2.0",
+    "semantic-release": "^15.9.2"
   }
 }
